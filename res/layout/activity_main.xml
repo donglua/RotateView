@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <com.dongluh.rotateview.view.RotateLayout
+        android:id="@+id/rotatelayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/hello_world" />
+    </com.dongluh.rotateview.view.RotateLayout>
+
+    <com.dongluh.rotateview.view.RotateLayout
+        android:id="@+id/rotatelayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rotatelayout1" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/hello_world" />
+    </com.dongluh.rotateview.view.RotateLayout>
+
+    <com.dongluh.rotateview.view.RotateLayout
+        android:id="@+id/rotatelayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rotatelayout2" >
+
+        <ImageView
+            android:id="@+id/rotateImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+    </com.dongluh.rotateview.view.RotateLayout>
+
+    <com.dongluh.rotateview.view.RotateLayout
+        android:id="@+id/rotatelayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rotatelayout3" >
+
+        <ImageButton
+            android:id="@+id/rotateImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+        
+    </com.dongluh.rotateview.view.RotateLayout>
+
+</RelativeLayout>
